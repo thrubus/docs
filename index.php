@@ -1,0 +1,1 @@
+<?php header("Location: http://localhost/thrubus/auth/login.php?role=mitra"); ?>
