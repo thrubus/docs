@@ -1,0 +1,21 @@
+[{
+  "nomer": "1.",
+  "nama": "Sugiono",
+  "telepon": "+62 838 4455 6633",
+  "alamat": "Jl. Raya Gunung Anyar Jaya no.4, Surabaya",
+  "status": "Aktif"
+},
+{
+  "nomer": "2.",
+  "nama": "Sumanto",
+  "telepon": "+62 838 4455 6633",
+  "alamat": "Jl. Raya Gunung Anyar Jaya no.4, Surabaya",
+  "status": "Tidak Aktif"
+},
+{
+  "nomer": "3.",
+  "nama": "Sumiati",
+  "telepon": "+62 838 4455 6633",
+  "alamat": "Jl. Raya Gunung Anyar Jaya no.4, Surabaya",
+  "status": "Menunggu Konfirmasi"
+}]
