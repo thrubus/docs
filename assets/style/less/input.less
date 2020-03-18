@@ -1,0 +1,131 @@
+@primary: #11998e;
+@secondary: #38ef7d;
+
+.form-group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+  flex: 1 1 0%;
+  label {
+    color: @label;
+    font-weight: 400
+  }
+}
+
+.form-label-float {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1.4rem;
+  font-weight: 300 !important;
+  color: @gray
+}
+
+.form-field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid @gray;
+  outline: 0;
+  font-size: 1.4rem;
+  color: @dark-gray;
+  padding: 7px 0;
+  padding-right: 28px;
+  background: transparent;
+  transition: border-color 0.2s;
+  &::placeholder {
+    color: transparent
+  }
+  &:placeholder-shown~.form-label-float {
+    font-size: 1.4rem;
+    cursor: text;
+    top: 20px
+  }
+  &:focus {
+    padding-bottom: 6px;
+    font-weight: 400 !important;
+    border-width: 2px !important;
+    border-image: linear-gradient(to right, @primary, @secondary) !important;
+    border-image-slice: 1 !important;
+    ~.form-label-float {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1.4rem;
+      color: @primary;
+      font-weight: 400 !important
+    }
+    ~.form-label-icon-left,
+    ~.form-label-icon-right {
+      transition: 0.2s;
+      color: @secondary
+    }
+  }
+  &:-moz-read-only,
+  &:read-only {
+    padding-bottom: 6px;
+    font-weight: 300 !important;
+    border-width: 3px;
+    color: @gray;
+    border-bottom: 1px solid @dark-gray;
+    cursor: not-allowed;
+    ~.form-label-float {
+      position: absolute;
+      top: 0;
+      display: block;
+      font-size: 1.4rem;
+      color: @gray
+    }
+  }
+  &:required,
+  &:invalid {
+    border-width: 2px;
+    border-image: linear-gradient(to right, @primary2, @secondary2);
+    border-image-slice: 1;
+    background-color: transparent;
+  }
+  &:valid {
+    border-width: 2px;
+    border-image: linear-gradient(to right, @dark-gray, @gray);
+    border-image-slice: 1;
+    background-color: transparent;
+  }
+  &:not(:placeholder-shown) {
+    ~.form-label-float {
+      font-weight: 400 !important
+    }
+  }
+  &[type=number] {
+    -moz-appearance: textfield;
+  }
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.form-label-icon-right,
+.form-label-icon-left {
+  position: absolute;
+  right: 4px;
+  bottom: 10px
+}
+
+.form-label-btn {
+  bottom: -3px;
+  right: -3px;
+  position: absolute !important
+}
+
+.form-label {
+  transition: 0.2s;
+  font-size: 1.4rem;
+  font-weight: 300 !important;
+  color: @gray !important;
+  display: block;
+  margin-bottom: 0
+}

@@ -1,0 +1,1 @@
+<?php header("Location: http://demo.okkarent.id/investor/dashboard.php"); ?>

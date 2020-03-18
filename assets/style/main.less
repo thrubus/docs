@@ -1,0 +1,143 @@
+@import 'less/attachment.min.less';
+@import 'less/background.min.less';
+@import 'less/button.min.less';
+@import 'less/checkbox.min.less';
+@import 'less/input.less';
+@import 'less/input-timeline.min.less';
+@import 'less/margin.min.less';
+@import 'less/modal-detail-product.min.less';
+@import 'less/padding.min.less';
+@import 'less/radio.min.less';
+@import 'less/select2.min.less';
+@import 'less/skin-adminlte.min.less';
+@import 'less/table.min.less';
+@import 'less/toggle.less';
+@import 'less/waves-ripple.min.less';
+
+@black: #000;
+@dark-gray: #333;
+@label: #555;
+@gray: #888;
+@light-gray: #d2d6de; //non-aktif
+@smoke: #f4f4f4;
+@white: #fff;
+@navy: #001f3f; //expired
+@blue: #3c8dbc; //terjadwal
+@light-blue: #0077ff;
+@aqua: #00c0ef; //proses
+@purple: #605ca8; //telepon masuk
+@maroon: #85144b; //ditangguhkan
+@red: #c00;; //cancel
+@fuchsia: #f012be;
+@orange: #ff851b; //booking
+@yellow: #ffbd00;
+@green: #008d4c; //ready
+@olive: #3d9970;
+@lime: lime; //#01ff70; //close
+@teal: #39cccc; //menunggu verifikasi
+@tosca: #2BBBAD;
+@primary: #11998e;
+@secondary: #38ef7d;
+@primary2: #b81717;
+@secondary2: #fd3318;
+
+#components(){
+  .box-color(@color){
+    border-top-color: @color !important;
+  }
+  .bg-color(@color){
+    background-color: @color;
+  }
+}
+
+.img-full{
+  width: 100%;
+}
+.img-radius img{
+  border-radius: 18px;
+}
+
+.box-navy{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 1.25rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 0.25rem;
+  // #components.box-color(@navy);
+  .box-header{
+    padding-top: 4px;
+  }
+  .box-body{
+    >div{
+      .row{
+        .col-sm-12{
+          overflow: auto;
+        }
+      }
+    }
+  }
+}
+
+.center {
+  vertical-align: middle;
+  text-align: center;
+}
+
+// input:invalid {
+//   border: 1px dotted red;
+// }
+
+// input:out-of-range + label::after {
+//   content: 'Must ';
+// }
+
+// input:in-range {
+//   background-color: rgba(0, 255, 0, 0.25);
+// }
+
+// input:out-of-range {
+//   background-color: rgba(255, 0, 0, 0.25);
+//   border: 2px solid red;
+// }
+
+// input:in-range + label::after {
+//   content: 'okay.';
+// }
+
+// input:out-of-range + label::after {
+//   content: 'out of range!';
+// }
+
+
+
+.main-sidebar{
+  position: fixed;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.main-header{
+  position: fixed;
+  width: 100%;
+}
+.navbar{
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.content-wrapper{
+  margin-top: 52px;
+  @media (max-width: 576px) {
+    margin-top: 100px;
+  }
+  @media (min-width: 767px) {
+    margin-top: 52px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 52px;
+  }
+  @media (min-width: 1280px) {
+    margin-top: 52px;
+  }
+}
+.square-border {
+  border: 1px solid @gray;
+  padding: 15px;
+  margin: 0px;
+}

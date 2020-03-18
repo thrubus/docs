@@ -1,0 +1,55 @@
+// skin-black-light
+.skin-black-light{
+  .sidebar-menu{
+    li{
+      &:hover {
+        a {
+          // color: @smoke;
+          // background: @black;
+        }
+      }
+      &.active {
+        background: @red;
+        a{
+          color: @black;
+          background: @smoke;
+        }
+      }
+    }
+    .treeview-menu{
+      li {
+        &.active {
+          a{
+            color: @red;
+            background: @smoke;
+          }
+        }
+        a {
+          &:hover{
+          //   color: @white;
+          //   background: @black;
+          }
+        }
+      }
+    }
+    .active {
+      // background-color: @red;
+      a {
+        margin-left: 8px;
+        background: @smoke;
+        padding-left: 8px;
+      }
+      .treeview-menu {
+        background: @smoke;
+        .active {
+          margin-left: 0;
+          background: @smoke;
+          padding-left: 0;
+          a {
+            background: @smoke;
+          }
+        }
+      }
+    }
+  }
+}
